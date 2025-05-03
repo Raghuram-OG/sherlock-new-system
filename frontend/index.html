@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Recruiter Dashboard</h1>
+        <div class="sidebar">
+            <label for="table-select">Select Table:</label>
+            <select id="table-select">
+                <option value="agents">Agents</option>
+                <option value="onboarding">Onboarding</option>
+                <option value="agent_hourly_metrics">Agent Hourly Metrics</option>
+                <option value="calls">Calls</option>
+                <option value="key_assignment">Key Assignment</option>
+                <option value="archives">Archives</option>
+            </select>
+        </div>
+        <div class="main-content">
+            <canvas id="chart" style="display: none;"></canvas>
+            <button id="download-csv" style="display: none;">Download CSV</button>
+            <table id="data-table">
+                <thead id="table-header"></thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/csv.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruiter App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Recruiter Dashboard</h1>
+        <div class="sidebar">
+            <label for="table-select">Select Table:</label>
+            <select id="table-select">
+                <option value="agents">Agents</option>
+                <option value="onboarding">Onboarding</option>
+                <option value="agent_hourly_metrics">Agent Hourly Metrics</option>
+                <option value="calls">Calls</option>
+                <option value="key_assignment">Key Assignment</option>
+                <option value="archives">Archives</option>
+            </select>
+        </div>
+        <div class="main-content">
+            <div id="filter-container" style="display: none; margin-bottom: 10px;">
+                <label for="days-filter">Show calls from past (days):</label>
+                <input type="number" id="days-filter" min="0" placeholder="e.g., 7" style="width: 100px; padding: 5px;">
+                <button id="apply-filter">Apply Filter</button>
+                <span id="filter-error" style="color: red; margin-left: 10px; display: none;">Please enter a valid number (0 or positive)</span>
+            </div>
+            <canvas id="chart" style="display: none;"></canvas>
+            <button id="download-csv" style="display: none;">Download CSV</button>
+            <table id="data-table">
+                <thead id="table-header"></thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/table.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/csv.js"></script>
+</body>
+</html>
